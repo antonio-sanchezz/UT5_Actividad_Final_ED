@@ -1,15 +1,17 @@
 package clases;
 
-public class Estadio {
+public class Equipo {
 
 	private String nombre;
-	private int capacidad;
 	private String localidad;
+	private int victorias;
+	
+	
 
-	public Estadio(String nombre, int capacidad, String localidad) {
+	public Equipo(String nombre, String localidad, int victorias) {
 		this.nombre = nombre;
-		this.capacidad = capacidad;
 		this.localidad = localidad;
+		this.victorias = victorias;
 	}
 
 	public String getNombre() {
@@ -20,14 +22,6 @@ public class Estadio {
 		this.nombre = nombre;
 	}
 
-	public int getCapacidad() {
-		return capacidad;
-	}
-
-	public void setCapacidad(int capacidad) {
-		this.capacidad = capacidad;
-	}
-
 	public String getLocalidad() {
 		return localidad;
 	}
@@ -36,4 +30,11 @@ public class Estadio {
 		this.localidad = localidad;
 	}
 
+	public int getVictorias() {
+		return victorias;
+	}
+
+	public void setVictorias(int victorias) {
+		this.victorias = victorias;
+	}
 }
